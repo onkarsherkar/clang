@@ -1,41 +1,30 @@
 #include <stdio.h>
 
 int main(){
-  /// Arithmetic Operators
-
-  // + addition
-  // - substraction
-  // * multiplication
-  // / division
-  // % Moodulus
-  // ++ increment
-  // -- decrement
+  
+  /// Agumented Assignment operator Ex. x = x + 1 => x += 1
 
   int x = 5;
-  int y = 2;
 
-  int z = x + y;
-  
+  // x = x + 2
+  x += 2;
+  printf("%d\n", x);
 
-  printf("Addition of %d and %d is %d\n", x, y, z);
+  // x = x - 3
+  x -= 3;
+  printf("%d\n", x);
 
-  z = x - y;
-  printf("Substraction of %d and %d is %d\n", x, y,z);
+  // x = x * 4
+  x *= 4;
+  printf("%d\n", x);
 
-  z = x * y;
-  printf("Multiplication od %d and %d is %d\n", x, y, z);
+  // x = x / 5
+  x /= 5;
+  printf("%d\n", x);
 
-  z = x / y;
-  printf("Division of %d and %d is %d\n", x, y, z);
-
-  z = x % y;
-  printf("Modulus of %d and %d is %d\n", x, y, z);
-
-  x++;
-  printf("Increment of x is %d\n", x);
-
-  y--;
-  printf("Decrement of y is %d\n", y);
+  // x = x % 2
+  x %= 2;
+  printf("%d\n", x);
 
   return 0;
 }
