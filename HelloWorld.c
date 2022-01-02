@@ -8,7 +8,7 @@ int main(){
   char name [20]; 
 
   printf("Enter your name\n");
-  scanf("%s\n",name);
+  fgets(name, 20, stdin);
   printf("Name is %s",name);
   printf("Enter your age\n");
   scanf("%d", &age);
