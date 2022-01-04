@@ -3,22 +3,36 @@
 
 int main(){
   
-  /// If statements
-  int age;
+  /// Switch case
 
-  printf("\n Enter your age:");
-  scanf("%d", &age);
+  char grade;
 
-  if(age >= 18){
-    printf("Your are now eligible for vote");
+  printf("\nEnter a letter grade:");
+  scanf("%c", &grade);
 
+  switch (grade)
+  {
+    case 'A':
+      printf("perfect");
+      break;
+
+    case 'B':
+      printf("Good");
+      break;
+
+    case 'C':
+      printf("average");
+      break;
+    
+    case 'D':
+      printf("OK");
+      break;
+
+    default:
+      printf("Not selected");
+      break;
   }
-  else{
-    printf('You are not eligible to vote');
-  }
 
-
-  
 
   return 0;
 }
